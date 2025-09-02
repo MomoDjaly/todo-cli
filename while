@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "===MENU==="
+echo "1. Dire bonjour"
+echo "2. Afficher la date"
+echo "3. Quittez"
+
+read choix
+
+if [ "$choix" -eq 1 ]; then
+    echo "Bonjour !"
+elif [ "$choix" -eq 2 ]; then 
+    date
+else
+    echo "Au revoir"
+fi
